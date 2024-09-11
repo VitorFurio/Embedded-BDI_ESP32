@@ -18,20 +18,32 @@ translate:
         main/data/functions.h                                                 \
         main/src/config/configuration.h                                       \
         $(EVENT_BASE_SIZE) $(INTENTION_BASE_SIZE) $(INTENTION_STACK_SIZE)
+  
         
-agent-bdi: set-target translate
-	idf.py -p $(interface) flash monitor
+agent-bdi: set-target translate build flash monitor
 
-agent-trad: set-target
-	idf.py -p $(interface) flash monitor
-
-set-target:
+set-target: clean-build
 	idf.py set-target esp32
+
+build:
+	idf.py build
+
+flash:
+	idf.py -p $(interface) flash
+
+monitor:
+	idf.py monitor
+
+clean-build:
+	rm -rf build/
 
 ######################## DEFAULT IDF MAKEFILE #################################
 
+alice:
+	./copy_examples.sh alice
+	make agent-bdi
+	
 PROJECT_NAME := agent-loop
-# include $(IDF_PATH)/make/project.mk
 
 
 

@@ -8,7 +8,7 @@ FILE(GLOB EMB_BDI_SYNTAX_SOURCES ../embedded-bdi/lib/syntax/*.cpp)
 FILE(GLOB EMB_BDI_COMMUNICATION_SOURCES ../embedded-bdi/lib/communication/*.cpp)
 
 # Configuração do componente
-idf_component_register(SRCS src/agent_loop.cpp data/functions.cpp data/wifi_station.c 
+idf_component_register(SRCS src/agent_loop.cpp data/functions.cpp wifi_functions/wifi_station.c 
                        ${EMB_BDI_AGENT_SOURCES} 
                        ${EMB_BDI_BDI_SOURCES} 
                        ${EMB_BDI_LIB_SOURCES} 

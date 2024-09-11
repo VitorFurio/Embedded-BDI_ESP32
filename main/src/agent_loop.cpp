@@ -17,7 +17,7 @@
 #include "../data/functions.h"
 
 extern "C" {
- 	#include "../data/wifi_station.h"
+ 	#include "../wifi_functions/wifi_station.h"
 	void app_main(void);
 }
 
