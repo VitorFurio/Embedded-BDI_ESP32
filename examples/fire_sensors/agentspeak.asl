@@ -1,13 +1,38 @@
-// Agent Alice.
-
+// Monitoramento e Alerta em uma Rede de Sensores
 !start.
-!is_day. 
-its_day. 
-its_night.
 
-+!start <- .my_name("alice"); say_start.
+// Condições iniciais
++!start : true <-
+    .my_name("sensor1");
+    -sensor1;
+    -sensor2;
+    -sensor3;
+    print_init.
+    
 
-+!hello <- say_hello .send(bob,achieve,is_day). //Ask Bob if it's day
+// Reação ao ambiente e sociabilidade
++fire : true <- print_fire; +alert; .broadcast(tell,sensor1).
+-fire : true <- print_not_fire; .broadcast(untell,sensor1).
 
-+its_day <- say_its_day.
-+its_night <- say_its_night.
+// Reação a mensagens
++sensor2 <- +alert.
++sensor3 <- +alert.
+
++alert <- print_alert; !!check_alarm_condition.
+
+// Se pelo menos 2 sensores dispararem, o alarme é acionado.
++!check_alarm_condition: fire & sensor2 <- trigger_alarm; !!check_alarm_condition.
++!check_alarm_condition: fire & sensor3 <- trigger_alarm; !!check_alarm_condition. 
+
+// Mantém o estado de alerta.
++!check_alarm_condition: fire <- +alert; !!check_alarm_condition. 
++!check_alarm_condition: sensor2 <- +alert !!check_alarm_condition. 
++!check_alarm_condition: sensor3 <- +alert; !!check_alarm_condition. 
+
+// Sai do estado de alerta.
++!check_alarm_condition <- -alert; print_default.
+
+
+// # Proatividade -> persiste no seu objetivo de checar a condição de alarme.
+// # Autonomia    -> O agente decide por conta própria quando deve acionar o alarme e se deve manter um estado de alerta ou não.
+

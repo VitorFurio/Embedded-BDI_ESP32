@@ -35,7 +35,7 @@ void app_main()
 	//}
 	//ESP_ERROR_CHECK(ret);
 
-	//ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
+	
 	wifi_init_sta();
 
 	
@@ -50,6 +50,8 @@ void app_main()
   communicator->initialize();
   
   AgentComm agent(beliefs, events, plans, intentions, communicator);
+  
+  setup();
   
   while(true)
   {

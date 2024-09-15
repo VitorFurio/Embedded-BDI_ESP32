@@ -1,14 +1,26 @@
 #ifndef FUNCTIONS_H_
 #define FUNCTIONS_H_
 
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/gpio.h"
+#include "esp_log.h"
+#include "esp_timer.h"
+#include "esp_rom_sys.h"
 
-bool action_say_start();
-bool action_say_hello();
-bool action_say_its_day();
-bool action_say_its_night();
 
+// agent actions
+bool action_trigger_alarm();
+bool action_print_init();
+bool action_print_alert();
+bool action_print_default();
+bool action_print_fire();
+bool action_print_not_fire();
+bool update_fire(bool var);
+
+void setup();
 
 #endif /* FUNCTIONS_H_ */
 

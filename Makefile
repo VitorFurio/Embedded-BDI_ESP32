@@ -43,6 +43,10 @@ alice:
 	./copy_examples.sh alice
 	make agent-bdi
 	
+fire_sensors:
+	./copy_examples.sh sensor
+	make agent-bdi
+	
 PROJECT_NAME := agent-loop
 
 

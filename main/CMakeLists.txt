@@ -15,4 +15,3 @@ idf_component_register(SRCS src/agent_loop.cpp data/functions.cpp wifi_functions
                        ${EMB_BDI_SYNTAX_SOURCES} 
                        ${EMB_BDI_COMMUNICATION_SOURCES}
                        INCLUDE_DIRS "src" "../embedded-bdi/lib" "data")
-
