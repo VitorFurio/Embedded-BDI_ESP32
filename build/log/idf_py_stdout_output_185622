@@ -1,0 +1,1963 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (788) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (938) wifi:pm start, type: 1
+
+I (938) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (938) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1018) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:1, winSize:64
+[0;32mI (1948) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1948) wifi station: got ip:192.168.1.8[0m
+[0;32mI (1948) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (2068) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (2548) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:02
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 19:53:20
+Sensor2 operando em modo normal - 19:53:21
+# Fogo detectado! - 19:53:23
+Sensor2 operando em modo alerta - 19:53:23
+# Sem Fogo! - 19:53:31
+Sensor2 operando em modo normal - 19:53:31
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (898) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (908) wifi:state: init -> auth (0xb0)
+I (908) wifi:state: auth -> assoc (0x0)
+I (918) wifi:state: assoc -> run (0x10)
+I (1028) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (1038) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (1038) wifi:pm start, type: 1
+
+I (1038) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1108) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3178) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (4048) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4048) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4048) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4148) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4198) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 19:57:15
+# Fogo detectado! - 19:57:22
+# Sem Fogo! - 19:57:22
+
+# ALERT! DANGEROUS CONDITION!! - 19:57:22
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (828) wifi:state: auth -> assoc (0x0)
+I (838) wifi:state: assoc -> run (0x10)
+I (948) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (948) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (948) wifi:pm start, type: 1
+
+I (948) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1018) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3278) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (3958) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3958) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3958) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4068) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4108) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 19:58:30
+Sensor2 operando em modo normal - 19:58:31
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (858) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (868) wifi:state: init -> auth (0xb0)
+I (868) wifi:state: auth -> assoc (0x0)
+I (878) wifi:state: assoc -> run (0x10)
+I (978) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (978) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (988) wifi:pm start, type: 1
+
+I (988) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1068) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3068) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:1, winSize:64
+[0;32mI (3998) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3998) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3998) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4138) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4358) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 19:59:27
+Sensor2 operando em modo normal - 19:59:31
+Sensor2 operando em modo alerta - 19:59:33
+Sensor2 operando em modo normal - 19:59:37
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (898) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (908) wifi:state: init -> auth (0xb0)
+I (918) wifi:state: auth -> assoc (0x0)
+I (918) wifi:state: assoc -> run (0x10)
+I (1018) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (1028) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (1028) wifi:pm start, type: 1
+
+I (1028) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1108) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3168) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (4038) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4038) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4038) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4338) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4358) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:00:17
+Sensor2 operando em modo normal - 20:00:23
+Sensor2 operando em modo alerta - 20:00:24
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (928) wifi:pm start, type: 1
+
+I (928) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (938) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3208) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (3938) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3938) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3938) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4148) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4188) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:00:58
+Sensor2 operando em modo normal - 20:01:06
+Sensor2 operando em modo alerta - 20:01:07
+Sensor2 operando em modo normal - 20:01:07
+Sensor2 operando em modo alerta - 20:01:08
+Sensor2 operando em modo normal - 20:01:09
+Sensor2 operando em modo alerta - 20:01:10
+Sensor2 operando em modo normal - 20:01:13
+Sensor2 operando em modo alerta - 20:01:13
+Sensor2 operando em modo normal - 20:01:15
+Sensor2 operando em modo alerta - 20:01:15
+Sensor2 operando em modo normal - 20:01:20
+Sensor2 operando em modo alerta - 20:01:21
+Sensor2 operando em modo normal - 20:01:23
+Sensor2 operando em modo alerta - 20:01:24
+Sensor2 operando em modo normal - 20:01:26
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (788) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (938) wifi:pm start, type: 1
+
+I (938) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (978) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3058) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (3948) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3948) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3948) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4068) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4098) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:01:52
+Sensor2 operando em modo normal - 20:02:03
+Sensor2 operando em modo alerta - 20:02:07
+Sensor2 operando em modo normal - 20:02:12
+Sensor2 operando em modo alerta - 20:02:13
+Sensor2 operando em modo normal - 20:02:14
+Sensor2 operando em modo alerta - 20:02:14
+Sensor2 operando em modo normal - 20:02:15
+Sensor2 operando em modo alerta - 20:02:16
+Sensor2 operando em modo normal - 20:02:17
+Sensor2 operando em modo alerta - 20:02:19
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (788) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (938) wifi:pm start, type: 1
+
+I (938) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1008) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3478) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (4448) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4448) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4448) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4598) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4658) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:04
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:02:45
+Sensor2 operando em modo normal - 20:02:57
+# Fogo detectado! - 20:03:00
+Sensor2 operando em modo alerta - 20:03:00
+# Fogo detectado! - 20:03:02
+# Sem Fogo! - 20:03:03
+Sensor2 operando em modo normal - 20:03:03
+Sensor2 operando em modo alerta - 20:03:08
+# Fogo detectado! - 20:03:11
+
+# ALERT! DANGEROUS CONDITION!! - 20:03:11
+# Fogo detectado! - 20:06:02
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (828) wifi:state: assoc -> run (0x10)
+I (938) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (938) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (938) wifi:pm start, type: 1
+
+I (938) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1028) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3398) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (3948) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3948) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3948) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4098) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4118) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:08:14
+Sensor2 operando em modo normal - 20:08:14
+Sensor2 operando em modo alerta - 20:08:15
+Sensor2 operando em modo normal - 20:08:17
+Sensor2 operando em modo alerta - 20:08:17
+Sensor2 operando em modo normal - 20:08:18
+Sensor2 operando em modo alerta - 20:08:20
+Sensor2 operando em modo normal - 20:08:20
+Sensor2 operando em modo alerta - 20:08:22
+Sensor2 operando em modo normal - 20:08:22
+Sensor2 operando em modo alerta - 20:08:23
+Sensor2 operando em modo normal - 20:08:25
+Sensor2 operando em modo alerta - 20:08:32
+Sensor2 operando em modo normal - 20:08:32
+Sensor2 operando em modo alerta - 20:08:42
+Sensor2 operando em modo normal - 20:08:42
+Sensor2 operando em modo alerta - 20:08:55
+Sensor2 operando em modo normal - 20:09:30
+Sensor2 operando em modo alerta - 20:09:31
+Sensor2 operando em modo normal - 20:09:31
+Sensor2 operando em modo alerta - 20:09:33
+Sensor2 operando em modo normal - 20:09:38
+Sensor2 operando em modo alerta - 20:09:39
+Sensor2 operando em modo normal - 20:09:46
+Sensor2 operando em modo alerta - 20:09:47
+Sensor2 operando em modo normal - 20:09:48
+Sensor2 operando em modo alerta - 20:09:49
+Sensor2 operando em modo normal - 20:09:52
+Sensor2 operando em modo alerta - 20:09:53
+Sensor2 operando em modo normal - 20:09:57
+Sensor2 operando em modo alerta - 20:09:58
+Sensor2 operando em modo normal - 20:09:58
+Sensor2 operando em modo alerta - 20:09:59
+Sensor2 operando em modo normal - 20:09:59
+Sensor2 operando em modo alerta - 20:10:03
+Sensor2 operando em modo normal - 20:10:03
+Sensor2 operando em modo alerta - 20:10:04
+Sensor2 operando em modo normal - 20:10:06
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (868) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (868) wifi:state: init -> auth (0xb0)
+I (878) wifi:state: auth -> assoc (0x0)
+I (878) wifi:state: assoc -> run (0x10)
+I (988) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (988) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (988) wifi:pm start, type: 1
+
+I (988) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1068) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3068) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:1, winSize:64
+[0;32mI (3998) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3998) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3998) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4138) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4258) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:10:32
+Sensor2 operando em modo normal - 20:10:33
+# Fogo detectado! - 20:10:41
+Sensor2 operando em modo alerta - 20:10:41
+# Sem Fogo! - 20:10:50
+Sensor2 operando em modo normal - 20:10:50
+Sensor2 operando em modo alerta - 20:10:56
+Sensor2 operando em modo normal - 20:10:56
+Sensor2 operando em modo alerta - 20:10:57
+Sensor2 operando em modo normal - 20:10:58
+Sensor2 operando em modo alerta - 20:10:59
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (828) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (928) wifi:pm start, type: 1
+
+I (928) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (988) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3188) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:1, winSize:64
+[0;32mI (4438) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4438) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4438) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4578) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4598) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:04
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:11:30
+Sensor2 operando em modo normal - 20:11:30
+Sensor2 operando em modo alerta - 20:12:04
+Sensor2 operando em modo normal - 20:12:04
+Sensor2 operando em modo alerta - 20:12:19
+# Fogo detectado! - 20:12:21
+
+# ALERT! DANGEROUS CONDITION!! - 20:12:22
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (918) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (928) wifi:pm start, type: 1
+
+I (928) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (988) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3558) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+I (4098) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:3, winSize:64
+[0;32mI (4438) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4438) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4438) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+[0;32mI (4588) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:04
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:14:35
+Sensor2 operando em modo normal - 20:14:49
+Sensor2 operando em modo alerta - 20:15:26
+Sensor2 operando em modo normal - 20:15:30
+Sensor2 operando em modo alerta - 20:15:31
+Sensor2 operando em modo normal - 20:15:31
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (818) wifi:state: assoc -> run (0x10)
+I (918) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (918) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (928) wifi:pm start, type: 1
+
+I (928) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (948) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3008) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:0, winSize:64
+[0;32mI (3938) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3938) wifi station: got ip:192.168.1.8[0m
+[0;32mI (3938) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4128) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4258) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:03
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:16:09
+Sensor2 operando em modo normal - 20:16:11
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+I (618) wifi:wifi driver task: 3ffc7ac8, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: cbdeb9883
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formatting: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (a0:dd:6c:85:c5:90)
+I (798) wifi:enable tsf
+[0;32mI (798) wifi station: wifi_init_sta finished.[0m
+I (808) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (808) wifi:state: init -> auth (0xb0)
+I (818) wifi:state: auth -> assoc (0x0)
+I (828) wifi:state: assoc -> run (0x10)
+I (928) wifi:connected with furio24g, aid = 7, channel 1, BW20, bssid = c0:51:5c:7f:37:c0
+I (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (928) wifi:pm start, type: 1
+
+I (928) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1028) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3638) wifi:<ba-add>idx:0 (ifx:0, c0:51:5c:7f:37:c0), tid:0, ssn:1, winSize:64
+[0;32mI (4438) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4438) wifi station: got ip:192.168.1.8[0m
+[0;32mI (4438) wifi station: connected to ap SSID:furio24g password:05022024[0m
+Proposition List:
+- Proposition: 14, Status: 0, ILF: TELL, Name: print_default
+- Proposition: 2, Status: 0, ILF: TELL, Name: sensor1
+- Proposition: 12, Status: 0, ILF: TELL, Name: check_alarm_condition
+- Proposition: 1, Status: 0, ILF: TELL, Name: fire
+- Proposition: 10, Status: 0, ILF: TELL, Name: print_not_fire
+- Proposition: 6, Status: 0, ILF: TELL, Name: .my_name
+- Proposition: 0, Status: 0, ILF: TELL, Name: alert
+- Proposition: 4, Status: 0, ILF: TELL, Name: sensor3
+- Proposition: 3, Status: 0, ILF: TELL, Name: sensor2
+- Proposition: 13, Status: 0, ILF: TELL, Name: trigger_alarm
+- Proposition: 8, Status: 0, ILF: TELL, Name: print_fire
+- Proposition: 5, Status: 0, ILF: TELL, Name: start
+- Proposition: 9, Status: 0, ILF: TELL, Name: .broadcast
+- Proposition: 11, Status: 0, ILF: TELL, Name: print_alert
+- Proposition: 7, Status: 0, ILF: TELL, Name: print_init
+
+I (4748) wifi:<ba-add>idx:1 (ifx:0, c0:51:5c:7f:37:c0), tid:6, ssn:2, winSize:64
+[0;32mI (4768) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+Initialize client with ID: sensor2.
+Agent's Name: sensor2
+Sensor2 iniciado - 00:00:04
+Inicializando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Aguardando sincronização NTP...
+Sincronização NTP concluída!
+Sensor2 operando em modo alerta - 20:16:37
+Sensor2 operando em modo normal - 20:16:38
+Sensor2 operando em modo alerta - 20:16:42
+Sensor2 operando em modo normal - 20:16:46
+Sensor2 operando em modo alerta - 20:16:51
+# Sem Fogo! - 20:16:56
+# Sem Fogo! - 20:16:58
+# Sem Fogo! - 20:17:02
+# Sem Fogo! - 20:17:04
+# Fogo detectado! - 20:17:04
+
+# ALERT! DANGEROUS CONDITION!! - 20:17:04
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io: dio[0m
+[0;33mW (563) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (578) main_task: Started on CPU0[0m
+[0;32mI (588) main_task: Calling app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15788
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2306-gdbce23f8a4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 30 2024 19:43:29[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260a0h (155808) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000360c8 vaddr=3ffb0000 size=03fd8h ( 16344) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003a0a8 vaddr=40080000 size=05f70h ( 24432) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6468h (681064) map[0m
+[0;32mI (410) esp_image: segment 4: paddr=000e6490 vaddr=40085f70 size=11840h ( 71744) load[0m
+[0;32mI (450) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (450) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu start user code[0m
+[0;32mI (471) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (471) app_init: Application information:[0m
+[0;32mI (474) app_init: Project name:     agent[0m
+[0;32mI (478) app_init: App version:      48ee39c-dirty[0m
+[0;32mI (484) app_init: Compile time:     Nov 30 2024 19:43:13[0m
+[0;32mI (490) app_init: ELF file SHA256:  5287edb18...[0m
+[0;32mI (495) app_init: ESP-IDF:          v5.4-dev-2306-gdbce23f8a4-dirty[0m
+[0;32mI (502) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (507) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (517) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (524) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (536) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 400977B0 len 00008850 (34 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (559) spi_flash: flash io:

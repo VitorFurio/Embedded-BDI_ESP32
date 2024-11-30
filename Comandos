@@ -1,0 +1,13 @@
+ESP32:	 
++ Variável de ambiente local da esp32:
+. $HOME/esp/esp-idf/export.sh
+
++ Compilação e execução:
+make fire_sensors
+
+
+idf.py set-target esp32
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py monitor
+

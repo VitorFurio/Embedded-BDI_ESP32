@@ -35,3 +35,5 @@ then
   cp examples/fire_sensors/CMakeLists.txt main/
   cp examples/fire_sensors/agent.config .
 fi
+
+

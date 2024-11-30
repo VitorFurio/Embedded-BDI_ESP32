@@ -1,5 +1,5 @@
 # Definir a interface serial, ajuste conforme necessário
-interface=/dev/ttyUSB0
+interface=/dev/ttyUSB1
 
 include agent.config
 
