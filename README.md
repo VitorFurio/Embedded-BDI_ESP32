@@ -1,6 +1,8 @@
 ---
 ## Example
-This example illustrates an agent called `sensor2`, which collaborates with other agents on fire detection. Upon detecting a condition indicating the presence of fire in its area, the agent enters an alert state and exchanges information with other agents in the region to determine if the event is a fire or an isolated incident that could be mistaken for one (e.g., a temperature increase due to a heat source like a stove, heater, etc.). In this example, a fire is considered present when at least two sensors detect fire, at which point the agent triggers an emergency alarm.
+This example illustrates an agent called [`sensor2`](https://github.com/VitorFurio/Embedded-BDI_ESP32/blob/main/examples/fire_sensors/agentspeak.asl), which collaborates with other agents on fire detection. Upon detecting a condition indicating the presence of fire in its area, the agent enters an alert state and exchanges information with other agents in the region to determine if the event is a fire or an isolated incident that could be mistaken for one (e.g., a temperature increase due to a heat source like a stove, heater, etc.). In this example, a fire is considered present when at least two sensors detect fire, at which point the agent triggers an emergency alarm.
+
+The source code of the agent, as well as companion functions for perception and action, are [here](https://github.com/VitorFurio/Embedded-BDI_ESP32/blob/main/examples/fire_sensors/).
 
 ### Docker-based execution (recommended)
 If the ESP32 board is connected to the /dev/ttyUSB0 serial port, type
